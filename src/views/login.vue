@@ -6,8 +6,12 @@
       <input type="password" v-model="password" placeholder="Password">
       
       <button @click="login">Login</button>
-      <button @click="loginWithGoogle">Login with Google</button>
-      
+      <div>
+      <button @click="loginWithGoogle" class="google-btn">
+      <img src="https://cdn.iconscout.com/icon/free/png-256/free-google-logo-icon-download-in-svg-png-gif-file-formats--brands-pack-logos-icons-189824.png?f=webp&w=256" alt="Google Logo" class="google-logo" />
+      Login with Google
+    </button>
+  </div>
       <p>Don't have an account? <a @click="goToRegister" style="cursor: pointer;">Register</a></p>
     </div>
   </template>
@@ -84,5 +88,22 @@
     margin: 10px;
     padding: 10px;
     cursor: pointer;
+}
+
+.google-btn {
+  display: flex;
+  align-items: center;  /* Vertically center the items */
+  justify-content: center; /* Horizontally center the content */
+  color: black;
+  border-radius: 4px;
+  width: 300px; /* Optional: you can adjust the width */
+  cursor: pointer;
+  border-radius: 10px;
+  border: 1px solid gray;
+}
+
+.google-logo {
+  width: 20px; /* Adjust size of the logo */
+  margin-right: 10px; /* Space between logo and text */
 }
   </style>
