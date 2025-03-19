@@ -12,7 +12,7 @@
       Login with Google
     </button>
   </div>
-      <p>Don't have an account? <a @click="goToRegister" style="cursor: pointer;">Register</a></p>
+      <p>Don't have an account? <a @click="goToRegister" class="go-to-register">Register</a></p>
     </div>
   </template>
   
@@ -100,6 +100,12 @@
   cursor: pointer;
   border-radius: 10px;
   border: 1px solid gray;
+}
+.go-to-register{
+  cursor: pointer;
+}
+.go-to-register:hover{
+  text-decoration: underline;
 }
 
 .google-logo {
